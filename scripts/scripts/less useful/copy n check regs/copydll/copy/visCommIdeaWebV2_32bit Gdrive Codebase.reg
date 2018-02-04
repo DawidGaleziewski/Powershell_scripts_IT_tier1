@@ -1,0 +1,673 @@
+REGEDIT4
+
+[HKEY_CLASSES_ROOT\visCommIdeaWebV2.Config]
+@="visCommIdeaWebV2.Config"
+
+[HKEY_CLASSES_ROOT\visCommIdeaWebV2.Config\CLSID]
+@="{6CB0CE8B-8374-3C90-8474-AEBE7E64ACAE}"
+
+[HKEY_CLASSES_ROOT\CLSID\{6CB0CE8B-8374-3C90-8474-AEBE7E64ACAE}]
+@="visCommIdeaWebV2.Config"
+
+[HKEY_CLASSES_ROOT\CLSID\{6CB0CE8B-8374-3C90-8474-AEBE7E64ACAE}\InprocServer32]
+@="mscoree.dll"
+"ThreadingModel"="Both"
+"Class"="visCommIdeaWebV2.Config"
+"Assembly"="visCommIdeaWebV2, Version=4.5.6.0, Culture=neutral, PublicKeyToken=null"
+"RuntimeVersion"="v4.0.30319"
+"CodeBase"="file:///G:/Vista/PaymentsModule/visCommIdeaWebV2.dll"
+
+[HKEY_CLASSES_ROOT\CLSID\{6CB0CE8B-8374-3C90-8474-AEBE7E64ACAE}\InprocServer32\4.5.6.0]
+"Class"="visCommIdeaWebV2.Config"
+"Assembly"="visCommIdeaWebV2, Version=4.5.6.0, Culture=neutral, PublicKeyToken=null"
+"RuntimeVersion"="v4.0.30319"
+"CodeBase"="file:///G:/Vista/PaymentsModule/visCommIdeaWebV2.dll"
+
+[HKEY_CLASSES_ROOT\CLSID\{6CB0CE8B-8374-3C90-8474-AEBE7E64ACAE}\ProgId]
+@="visCommIdeaWebV2.Config"
+
+[HKEY_CLASSES_ROOT\CLSID\{6CB0CE8B-8374-3C90-8474-AEBE7E64ACAE}\Implemented Categories\{62C8FE65-4EBB-45E7-B440-6E39B2CDBF29}]
+
+[HKEY_CLASSES_ROOT\visCommIdeaWebV2.LocalConstants]
+@="visCommIdeaWebV2.LocalConstants"
+
+[HKEY_CLASSES_ROOT\visCommIdeaWebV2.LocalConstants\CLSID]
+@="{52DB7940-0F8D-3CD6-BD97-9083009A898B}"
+
+[HKEY_CLASSES_ROOT\CLSID\{52DB7940-0F8D-3CD6-BD97-9083009A898B}]
+@="visCommIdeaWebV2.LocalConstants"
+
+[HKEY_CLASSES_ROOT\CLSID\{52DB7940-0F8D-3CD6-BD97-9083009A898B}\InprocServer32]
+@="mscoree.dll"
+"ThreadingModel"="Both"
+"Class"="visCommIdeaWebV2.LocalConstants"
+"Assembly"="visCommIdeaWebV2, Version=4.5.6.0, Culture=neutral, PublicKeyToken=null"
+"RuntimeVersion"="v4.0.30319"
+"CodeBase"="file:///G:/Vista/PaymentsModule/visCommIdeaWebV2.dll"
+
+[HKEY_CLASSES_ROOT\CLSID\{52DB7940-0F8D-3CD6-BD97-9083009A898B}\InprocServer32\4.5.6.0]
+"Class"="visCommIdeaWebV2.LocalConstants"
+"Assembly"="visCommIdeaWebV2, Version=4.5.6.0, Culture=neutral, PublicKeyToken=null"
+"RuntimeVersion"="v4.0.30319"
+"CodeBase"="file:///G:/Vista/PaymentsModule/visCommIdeaWebV2.dll"
+
+[HKEY_CLASSES_ROOT\CLSID\{52DB7940-0F8D-3CD6-BD97-9083009A898B}\ProgId]
+@="visCommIdeaWebV2.LocalConstants"
+
+[HKEY_CLASSES_ROOT\CLSID\{52DB7940-0F8D-3CD6-BD97-9083009A898B}\Implemented Categories\{62C8FE65-4EBB-45E7-B440-6E39B2CDBF29}]
+
+[HKEY_CLASSES_ROOT\visCommIdeaWebV2.PMServiceInterfaceV2]
+@="visCommIdeaWebV2.PMServiceInterfaceV2"
+
+[HKEY_CLASSES_ROOT\visCommIdeaWebV2.PMServiceInterfaceV2\CLSID]
+@="{0852EE68-1663-43B3-A1A4-C3090A334755}"
+
+[HKEY_CLASSES_ROOT\CLSID\{0852EE68-1663-43B3-A1A4-C3090A334755}]
+@="visCommIdeaWebV2.PMServiceInterfaceV2"
+
+[HKEY_CLASSES_ROOT\CLSID\{0852EE68-1663-43B3-A1A4-C3090A334755}\InprocServer32]
+@="mscoree.dll"
+"ThreadingModel"="Both"
+"Class"="visCommIdeaWebV2.PMServiceInterfaceV2"
+"Assembly"="visCommIdeaWebV2, Version=4.5.6.0, Culture=neutral, PublicKeyToken=null"
+"RuntimeVersion"="v4.0.30319"
+"CodeBase"="file:///G:/Vista/PaymentsModule/visCommIdeaWebV2.dll"
+
+[HKEY_CLASSES_ROOT\CLSID\{0852EE68-1663-43B3-A1A4-C3090A334755}\InprocServer32\4.5.6.0]
+"Class"="visCommIdeaWebV2.PMServiceInterfaceV2"
+"Assembly"="visCommIdeaWebV2, Version=4.5.6.0, Culture=neutral, PublicKeyToken=null"
+"RuntimeVersion"="v4.0.30319"
+"CodeBase"="file:///G:/Vista/PaymentsModule/visCommIdeaWebV2.dll"
+
+[HKEY_CLASSES_ROOT\CLSID\{0852EE68-1663-43B3-A1A4-C3090A334755}\ProgId]
+@="visCommIdeaWebV2.PMServiceInterfaceV2"
+
+[HKEY_CLASSES_ROOT\CLSID\{0852EE68-1663-43B3-A1A4-C3090A334755}\Implemented Categories\{62C8FE65-4EBB-45E7-B440-6E39B2CDBF29}]
+
+[HKEY_CLASSES_ROOT\visCommIdeaWebV2.CommIdea.Gateway.Gateway]
+@="visCommIdeaWebV2.CommIdea.Gateway.Gateway"
+
+[HKEY_CLASSES_ROOT\visCommIdeaWebV2.CommIdea.Gateway.Gateway\CLSID]
+@="{C13BD612-7B1E-3440-9E74-8854D239000C}"
+
+[HKEY_CLASSES_ROOT\CLSID\{C13BD612-7B1E-3440-9E74-8854D239000C}]
+@="visCommIdeaWebV2.CommIdea.Gateway.Gateway"
+
+[HKEY_CLASSES_ROOT\CLSID\{C13BD612-7B1E-3440-9E74-8854D239000C}\InprocServer32]
+@="mscoree.dll"
+"ThreadingModel"="Both"
+"Class"="visCommIdeaWebV2.CommIdea.Gateway.Gateway"
+"Assembly"="visCommIdeaWebV2, Version=4.5.6.0, Culture=neutral, PublicKeyToken=null"
+"RuntimeVersion"="v4.0.30319"
+"CodeBase"="file:///G:/Vista/PaymentsModule/visCommIdeaWebV2.dll"
+
+[HKEY_CLASSES_ROOT\CLSID\{C13BD612-7B1E-3440-9E74-8854D239000C}\InprocServer32\4.5.6.0]
+"Class"="visCommIdeaWebV2.CommIdea.Gateway.Gateway"
+"Assembly"="visCommIdeaWebV2, Version=4.5.6.0, Culture=neutral, PublicKeyToken=null"
+"RuntimeVersion"="v4.0.30319"
+"CodeBase"="file:///G:/Vista/PaymentsModule/visCommIdeaWebV2.dll"
+
+[HKEY_CLASSES_ROOT\CLSID\{C13BD612-7B1E-3440-9E74-8854D239000C}\ProgId]
+@="visCommIdeaWebV2.CommIdea.Gateway.Gateway"
+
+[HKEY_CLASSES_ROOT\CLSID\{C13BD612-7B1E-3440-9E74-8854D239000C}\Implemented Categories\{62C8FE65-4EBB-45E7-B440-6E39B2CDBF29}]
+
+[HKEY_CLASSES_ROOT\visCommIdeaWebV2.CommIdea.Gateway.TransactionRequest]
+@="visCommIdeaWebV2.CommIdea.Gateway.TransactionRequest"
+
+[HKEY_CLASSES_ROOT\visCommIdeaWebV2.CommIdea.Gateway.TransactionRequest\CLSID]
+@="{5677D52C-5DE3-3BE1-97B9-43955B0DCD04}"
+
+[HKEY_CLASSES_ROOT\CLSID\{5677D52C-5DE3-3BE1-97B9-43955B0DCD04}]
+@="visCommIdeaWebV2.CommIdea.Gateway.TransactionRequest"
+
+[HKEY_CLASSES_ROOT\CLSID\{5677D52C-5DE3-3BE1-97B9-43955B0DCD04}\InprocServer32]
+@="mscoree.dll"
+"ThreadingModel"="Both"
+"Class"="visCommIdeaWebV2.CommIdea.Gateway.TransactionRequest"
+"Assembly"="visCommIdeaWebV2, Version=4.5.6.0, Culture=neutral, PublicKeyToken=null"
+"RuntimeVersion"="v4.0.30319"
+"CodeBase"="file:///G:/Vista/PaymentsModule/visCommIdeaWebV2.dll"
+
+[HKEY_CLASSES_ROOT\CLSID\{5677D52C-5DE3-3BE1-97B9-43955B0DCD04}\InprocServer32\4.5.6.0]
+"Class"="visCommIdeaWebV2.CommIdea.Gateway.TransactionRequest"
+"Assembly"="visCommIdeaWebV2, Version=4.5.6.0, Culture=neutral, PublicKeyToken=null"
+"RuntimeVersion"="v4.0.30319"
+"CodeBase"="file:///G:/Vista/PaymentsModule/visCommIdeaWebV2.dll"
+
+[HKEY_CLASSES_ROOT\CLSID\{5677D52C-5DE3-3BE1-97B9-43955B0DCD04}\ProgId]
+@="visCommIdeaWebV2.CommIdea.Gateway.TransactionRequest"
+
+[HKEY_CLASSES_ROOT\CLSID\{5677D52C-5DE3-3BE1-97B9-43955B0DCD04}\Implemented Categories\{62C8FE65-4EBB-45E7-B440-6E39B2CDBF29}]
+
+[HKEY_CLASSES_ROOT\visCommIdeaWebV2.CommIdea.Gateway.ICCDetails]
+@="visCommIdeaWebV2.CommIdea.Gateway.ICCDetails"
+
+[HKEY_CLASSES_ROOT\visCommIdeaWebV2.CommIdea.Gateway.ICCDetails\CLSID]
+@="{E0217F3F-87D0-3F7C-9A76-BA03D588F46C}"
+
+[HKEY_CLASSES_ROOT\CLSID\{E0217F3F-87D0-3F7C-9A76-BA03D588F46C}]
+@="visCommIdeaWebV2.CommIdea.Gateway.ICCDetails"
+
+[HKEY_CLASSES_ROOT\CLSID\{E0217F3F-87D0-3F7C-9A76-BA03D588F46C}\InprocServer32]
+@="mscoree.dll"
+"ThreadingModel"="Both"
+"Class"="visCommIdeaWebV2.CommIdea.Gateway.ICCDetails"
+"Assembly"="visCommIdeaWebV2, Version=4.5.6.0, Culture=neutral, PublicKeyToken=null"
+"RuntimeVersion"="v4.0.30319"
+"CodeBase"="file:///G:/Vista/PaymentsModule/visCommIdeaWebV2.dll"
+
+[HKEY_CLASSES_ROOT\CLSID\{E0217F3F-87D0-3F7C-9A76-BA03D588F46C}\InprocServer32\4.5.6.0]
+"Class"="visCommIdeaWebV2.CommIdea.Gateway.ICCDetails"
+"Assembly"="visCommIdeaWebV2, Version=4.5.6.0, Culture=neutral, PublicKeyToken=null"
+"RuntimeVersion"="v4.0.30319"
+"CodeBase"="file:///G:/Vista/PaymentsModule/visCommIdeaWebV2.dll"
+
+[HKEY_CLASSES_ROOT\CLSID\{E0217F3F-87D0-3F7C-9A76-BA03D588F46C}\ProgId]
+@="visCommIdeaWebV2.CommIdea.Gateway.ICCDetails"
+
+[HKEY_CLASSES_ROOT\CLSID\{E0217F3F-87D0-3F7C-9A76-BA03D588F46C}\Implemented Categories\{62C8FE65-4EBB-45E7-B440-6E39B2CDBF29}]
+
+[HKEY_CLASSES_ROOT\visCommIdeaWebV2.CommIdea.Gateway.ConfirmationRequest]
+@="visCommIdeaWebV2.CommIdea.Gateway.ConfirmationRequest"
+
+[HKEY_CLASSES_ROOT\visCommIdeaWebV2.CommIdea.Gateway.ConfirmationRequest\CLSID]
+@="{37E16E16-0468-3269-A936-3963D0FDDB89}"
+
+[HKEY_CLASSES_ROOT\CLSID\{37E16E16-0468-3269-A936-3963D0FDDB89}]
+@="visCommIdeaWebV2.CommIdea.Gateway.ConfirmationRequest"
+
+[HKEY_CLASSES_ROOT\CLSID\{37E16E16-0468-3269-A936-3963D0FDDB89}\InprocServer32]
+@="mscoree.dll"
+"ThreadingModel"="Both"
+"Class"="visCommIdeaWebV2.CommIdea.Gateway.ConfirmationRequest"
+"Assembly"="visCommIdeaWebV2, Version=4.5.6.0, Culture=neutral, PublicKeyToken=null"
+"RuntimeVersion"="v4.0.30319"
+"CodeBase"="file:///G:/Vista/PaymentsModule/visCommIdeaWebV2.dll"
+
+[HKEY_CLASSES_ROOT\CLSID\{37E16E16-0468-3269-A936-3963D0FDDB89}\InprocServer32\4.5.6.0]
+"Class"="visCommIdeaWebV2.CommIdea.Gateway.ConfirmationRequest"
+"Assembly"="visCommIdeaWebV2, Version=4.5.6.0, Culture=neutral, PublicKeyToken=null"
+"RuntimeVersion"="v4.0.30319"
+"CodeBase"="file:///G:/Vista/PaymentsModule/visCommIdeaWebV2.dll"
+
+[HKEY_CLASSES_ROOT\CLSID\{37E16E16-0468-3269-A936-3963D0FDDB89}\ProgId]
+@="visCommIdeaWebV2.CommIdea.Gateway.ConfirmationRequest"
+
+[HKEY_CLASSES_ROOT\CLSID\{37E16E16-0468-3269-A936-3963D0FDDB89}\Implemented Categories\{62C8FE65-4EBB-45E7-B440-6E39B2CDBF29}]
+
+[HKEY_CLASSES_ROOT\visCommIdeaWebV2.CommIdea.Gateway.MerchantDetails]
+@="visCommIdeaWebV2.CommIdea.Gateway.MerchantDetails"
+
+[HKEY_CLASSES_ROOT\visCommIdeaWebV2.CommIdea.Gateway.MerchantDetails\CLSID]
+@="{B5B65F0F-5E45-39D5-8D71-D8A04D7BB15B}"
+
+[HKEY_CLASSES_ROOT\CLSID\{B5B65F0F-5E45-39D5-8D71-D8A04D7BB15B}]
+@="visCommIdeaWebV2.CommIdea.Gateway.MerchantDetails"
+
+[HKEY_CLASSES_ROOT\CLSID\{B5B65F0F-5E45-39D5-8D71-D8A04D7BB15B}\InprocServer32]
+@="mscoree.dll"
+"ThreadingModel"="Both"
+"Class"="visCommIdeaWebV2.CommIdea.Gateway.MerchantDetails"
+"Assembly"="visCommIdeaWebV2, Version=4.5.6.0, Culture=neutral, PublicKeyToken=null"
+"RuntimeVersion"="v4.0.30319"
+"CodeBase"="file:///G:/Vista/PaymentsModule/visCommIdeaWebV2.dll"
+
+[HKEY_CLASSES_ROOT\CLSID\{B5B65F0F-5E45-39D5-8D71-D8A04D7BB15B}\InprocServer32\4.5.6.0]
+"Class"="visCommIdeaWebV2.CommIdea.Gateway.MerchantDetails"
+"Assembly"="visCommIdeaWebV2, Version=4.5.6.0, Culture=neutral, PublicKeyToken=null"
+"RuntimeVersion"="v4.0.30319"
+"CodeBase"="file:///G:/Vista/PaymentsModule/visCommIdeaWebV2.dll"
+
+[HKEY_CLASSES_ROOT\CLSID\{B5B65F0F-5E45-39D5-8D71-D8A04D7BB15B}\ProgId]
+@="visCommIdeaWebV2.CommIdea.Gateway.MerchantDetails"
+
+[HKEY_CLASSES_ROOT\CLSID\{B5B65F0F-5E45-39D5-8D71-D8A04D7BB15B}\Implemented Categories\{62C8FE65-4EBB-45E7-B440-6E39B2CDBF29}]
+
+[HKEY_CLASSES_ROOT\visCommIdeaWebV2.CommIdea.Gateway.ICCResponseDetails]
+@="visCommIdeaWebV2.CommIdea.Gateway.ICCResponseDetails"
+
+[HKEY_CLASSES_ROOT\visCommIdeaWebV2.CommIdea.Gateway.ICCResponseDetails\CLSID]
+@="{47611DBC-AA98-3E6E-AD64-805F0AA4D2F2}"
+
+[HKEY_CLASSES_ROOT\CLSID\{47611DBC-AA98-3E6E-AD64-805F0AA4D2F2}]
+@="visCommIdeaWebV2.CommIdea.Gateway.ICCResponseDetails"
+
+[HKEY_CLASSES_ROOT\CLSID\{47611DBC-AA98-3E6E-AD64-805F0AA4D2F2}\InprocServer32]
+@="mscoree.dll"
+"ThreadingModel"="Both"
+"Class"="visCommIdeaWebV2.CommIdea.Gateway.ICCResponseDetails"
+"Assembly"="visCommIdeaWebV2, Version=4.5.6.0, Culture=neutral, PublicKeyToken=null"
+"RuntimeVersion"="v4.0.30319"
+"CodeBase"="file:///G:/Vista/PaymentsModule/visCommIdeaWebV2.dll"
+
+[HKEY_CLASSES_ROOT\CLSID\{47611DBC-AA98-3E6E-AD64-805F0AA4D2F2}\InprocServer32\4.5.6.0]
+"Class"="visCommIdeaWebV2.CommIdea.Gateway.ICCResponseDetails"
+"Assembly"="visCommIdeaWebV2, Version=4.5.6.0, Culture=neutral, PublicKeyToken=null"
+"RuntimeVersion"="v4.0.30319"
+"CodeBase"="file:///G:/Vista/PaymentsModule/visCommIdeaWebV2.dll"
+
+[HKEY_CLASSES_ROOT\CLSID\{47611DBC-AA98-3E6E-AD64-805F0AA4D2F2}\ProgId]
+@="visCommIdeaWebV2.CommIdea.Gateway.ICCResponseDetails"
+
+[HKEY_CLASSES_ROOT\CLSID\{47611DBC-AA98-3E6E-AD64-805F0AA4D2F2}\Implemented Categories\{62C8FE65-4EBB-45E7-B440-6E39B2CDBF29}]
+
+[HKEY_CLASSES_ROOT\visCommIdeaWebV2.CommIdea.Gateway.TransactionResponse]
+@="visCommIdeaWebV2.CommIdea.Gateway.TransactionResponse"
+
+[HKEY_CLASSES_ROOT\visCommIdeaWebV2.CommIdea.Gateway.TransactionResponse\CLSID]
+@="{7FF6644D-37B0-3D57-AAAB-8B33E9DB69E4}"
+
+[HKEY_CLASSES_ROOT\CLSID\{7FF6644D-37B0-3D57-AAAB-8B33E9DB69E4}]
+@="visCommIdeaWebV2.CommIdea.Gateway.TransactionResponse"
+
+[HKEY_CLASSES_ROOT\CLSID\{7FF6644D-37B0-3D57-AAAB-8B33E9DB69E4}\InprocServer32]
+@="mscoree.dll"
+"ThreadingModel"="Both"
+"Class"="visCommIdeaWebV2.CommIdea.Gateway.TransactionResponse"
+"Assembly"="visCommIdeaWebV2, Version=4.5.6.0, Culture=neutral, PublicKeyToken=null"
+"RuntimeVersion"="v4.0.30319"
+"CodeBase"="file:///G:/Vista/PaymentsModule/visCommIdeaWebV2.dll"
+
+[HKEY_CLASSES_ROOT\CLSID\{7FF6644D-37B0-3D57-AAAB-8B33E9DB69E4}\InprocServer32\4.5.6.0]
+"Class"="visCommIdeaWebV2.CommIdea.Gateway.TransactionResponse"
+"Assembly"="visCommIdeaWebV2, Version=4.5.6.0, Culture=neutral, PublicKeyToken=null"
+"RuntimeVersion"="v4.0.30319"
+"CodeBase"="file:///G:/Vista/PaymentsModule/visCommIdeaWebV2.dll"
+
+[HKEY_CLASSES_ROOT\CLSID\{7FF6644D-37B0-3D57-AAAB-8B33E9DB69E4}\ProgId]
+@="visCommIdeaWebV2.CommIdea.Gateway.TransactionResponse"
+
+[HKEY_CLASSES_ROOT\CLSID\{7FF6644D-37B0-3D57-AAAB-8B33E9DB69E4}\Implemented Categories\{62C8FE65-4EBB-45E7-B440-6E39B2CDBF29}]
+
+[HKEY_CLASSES_ROOT\visCommIdeaWebV2.CommIdea.Gateway.PayerAuthDetails]
+@="visCommIdeaWebV2.CommIdea.Gateway.PayerAuthDetails"
+
+[HKEY_CLASSES_ROOT\visCommIdeaWebV2.CommIdea.Gateway.PayerAuthDetails\CLSID]
+@="{0734F393-8526-364C-B315-B431E3BFED74}"
+
+[HKEY_CLASSES_ROOT\CLSID\{0734F393-8526-364C-B315-B431E3BFED74}]
+@="visCommIdeaWebV2.CommIdea.Gateway.PayerAuthDetails"
+
+[HKEY_CLASSES_ROOT\CLSID\{0734F393-8526-364C-B315-B431E3BFED74}\InprocServer32]
+@="mscoree.dll"
+"ThreadingModel"="Both"
+"Class"="visCommIdeaWebV2.CommIdea.Gateway.PayerAuthDetails"
+"Assembly"="visCommIdeaWebV2, Version=4.5.6.0, Culture=neutral, PublicKeyToken=null"
+"RuntimeVersion"="v4.0.30319"
+"CodeBase"="file:///G:/Vista/PaymentsModule/visCommIdeaWebV2.dll"
+
+[HKEY_CLASSES_ROOT\CLSID\{0734F393-8526-364C-B315-B431E3BFED74}\InprocServer32\4.5.6.0]
+"Class"="visCommIdeaWebV2.CommIdea.Gateway.PayerAuthDetails"
+"Assembly"="visCommIdeaWebV2, Version=4.5.6.0, Culture=neutral, PublicKeyToken=null"
+"RuntimeVersion"="v4.0.30319"
+"CodeBase"="file:///G:/Vista/PaymentsModule/visCommIdeaWebV2.dll"
+
+[HKEY_CLASSES_ROOT\CLSID\{0734F393-8526-364C-B315-B431E3BFED74}\ProgId]
+@="visCommIdeaWebV2.CommIdea.Gateway.PayerAuthDetails"
+
+[HKEY_CLASSES_ROOT\CLSID\{0734F393-8526-364C-B315-B431E3BFED74}\Implemented Categories\{62C8FE65-4EBB-45E7-B440-6E39B2CDBF29}]
+
+[HKEY_CLASSES_ROOT\visCommIdeaWebV2.CommIdea.PayerAuth.PayerAuth]
+@="visCommIdeaWebV2.CommIdea.PayerAuth.PayerAuth"
+
+[HKEY_CLASSES_ROOT\visCommIdeaWebV2.CommIdea.PayerAuth.PayerAuth\CLSID]
+@="{1573752B-3718-3D47-8992-A944240BFE3F}"
+
+[HKEY_CLASSES_ROOT\CLSID\{1573752B-3718-3D47-8992-A944240BFE3F}]
+@="visCommIdeaWebV2.CommIdea.PayerAuth.PayerAuth"
+
+[HKEY_CLASSES_ROOT\CLSID\{1573752B-3718-3D47-8992-A944240BFE3F}\InprocServer32]
+@="mscoree.dll"
+"ThreadingModel"="Both"
+"Class"="visCommIdeaWebV2.CommIdea.PayerAuth.PayerAuth"
+"Assembly"="visCommIdeaWebV2, Version=4.5.6.0, Culture=neutral, PublicKeyToken=null"
+"RuntimeVersion"="v4.0.30319"
+"CodeBase"="file:///G:/Vista/PaymentsModule/visCommIdeaWebV2.dll"
+
+[HKEY_CLASSES_ROOT\CLSID\{1573752B-3718-3D47-8992-A944240BFE3F}\InprocServer32\4.5.6.0]
+"Class"="visCommIdeaWebV2.CommIdea.PayerAuth.PayerAuth"
+"Assembly"="visCommIdeaWebV2, Version=4.5.6.0, Culture=neutral, PublicKeyToken=null"
+"RuntimeVersion"="v4.0.30319"
+"CodeBase"="file:///G:/Vista/PaymentsModule/visCommIdeaWebV2.dll"
+
+[HKEY_CLASSES_ROOT\CLSID\{1573752B-3718-3D47-8992-A944240BFE3F}\ProgId]
+@="visCommIdeaWebV2.CommIdea.PayerAuth.PayerAuth"
+
+[HKEY_CLASSES_ROOT\CLSID\{1573752B-3718-3D47-8992-A944240BFE3F}\Implemented Categories\{62C8FE65-4EBB-45E7-B440-6E39B2CDBF29}]
+
+[HKEY_CLASSES_ROOT\visCommIdeaWebV2.CommIdea.PayerAuth.EnrollmentCheckRequest]
+@="visCommIdeaWebV2.CommIdea.PayerAuth.EnrollmentCheckRequest"
+
+[HKEY_CLASSES_ROOT\visCommIdeaWebV2.CommIdea.PayerAuth.EnrollmentCheckRequest\CLSID]
+@="{46A61A38-62C3-3895-B958-BA7F033E3008}"
+
+[HKEY_CLASSES_ROOT\CLSID\{46A61A38-62C3-3895-B958-BA7F033E3008}]
+@="visCommIdeaWebV2.CommIdea.PayerAuth.EnrollmentCheckRequest"
+
+[HKEY_CLASSES_ROOT\CLSID\{46A61A38-62C3-3895-B958-BA7F033E3008}\InprocServer32]
+@="mscoree.dll"
+"ThreadingModel"="Both"
+"Class"="visCommIdeaWebV2.CommIdea.PayerAuth.EnrollmentCheckRequest"
+"Assembly"="visCommIdeaWebV2, Version=4.5.6.0, Culture=neutral, PublicKeyToken=null"
+"RuntimeVersion"="v4.0.30319"
+"CodeBase"="file:///G:/Vista/PaymentsModule/visCommIdeaWebV2.dll"
+
+[HKEY_CLASSES_ROOT\CLSID\{46A61A38-62C3-3895-B958-BA7F033E3008}\InprocServer32\4.5.6.0]
+"Class"="visCommIdeaWebV2.CommIdea.PayerAuth.EnrollmentCheckRequest"
+"Assembly"="visCommIdeaWebV2, Version=4.5.6.0, Culture=neutral, PublicKeyToken=null"
+"RuntimeVersion"="v4.0.30319"
+"CodeBase"="file:///G:/Vista/PaymentsModule/visCommIdeaWebV2.dll"
+
+[HKEY_CLASSES_ROOT\CLSID\{46A61A38-62C3-3895-B958-BA7F033E3008}\ProgId]
+@="visCommIdeaWebV2.CommIdea.PayerAuth.EnrollmentCheckRequest"
+
+[HKEY_CLASSES_ROOT\CLSID\{46A61A38-62C3-3895-B958-BA7F033E3008}\Implemented Categories\{62C8FE65-4EBB-45E7-B440-6E39B2CDBF29}]
+
+[HKEY_CLASSES_ROOT\visCommIdeaWebV2.CommIdea.PayerAuth.MerchantDetails]
+@="visCommIdeaWebV2.CommIdea.PayerAuth.MerchantDetails"
+
+[HKEY_CLASSES_ROOT\visCommIdeaWebV2.CommIdea.PayerAuth.MerchantDetails\CLSID]
+@="{B858442E-CE59-3D96-B1E0-B979FB2D4FA3}"
+
+[HKEY_CLASSES_ROOT\CLSID\{B858442E-CE59-3D96-B1E0-B979FB2D4FA3}]
+@="visCommIdeaWebV2.CommIdea.PayerAuth.MerchantDetails"
+
+[HKEY_CLASSES_ROOT\CLSID\{B858442E-CE59-3D96-B1E0-B979FB2D4FA3}\InprocServer32]
+@="mscoree.dll"
+"ThreadingModel"="Both"
+"Class"="visCommIdeaWebV2.CommIdea.PayerAuth.MerchantDetails"
+"Assembly"="visCommIdeaWebV2, Version=4.5.6.0, Culture=neutral, PublicKeyToken=null"
+"RuntimeVersion"="v4.0.30319"
+"CodeBase"="file:///G:/Vista/PaymentsModule/visCommIdeaWebV2.dll"
+
+[HKEY_CLASSES_ROOT\CLSID\{B858442E-CE59-3D96-B1E0-B979FB2D4FA3}\InprocServer32\4.5.6.0]
+"Class"="visCommIdeaWebV2.CommIdea.PayerAuth.MerchantDetails"
+"Assembly"="visCommIdeaWebV2, Version=4.5.6.0, Culture=neutral, PublicKeyToken=null"
+"RuntimeVersion"="v4.0.30319"
+"CodeBase"="file:///G:/Vista/PaymentsModule/visCommIdeaWebV2.dll"
+
+[HKEY_CLASSES_ROOT\CLSID\{B858442E-CE59-3D96-B1E0-B979FB2D4FA3}\ProgId]
+@="visCommIdeaWebV2.CommIdea.PayerAuth.MerchantDetails"
+
+[HKEY_CLASSES_ROOT\CLSID\{B858442E-CE59-3D96-B1E0-B979FB2D4FA3}\Implemented Categories\{62C8FE65-4EBB-45E7-B440-6E39B2CDBF29}]
+
+[HKEY_CLASSES_ROOT\visCommIdeaWebV2.CommIdea.PayerAuth.AuthenticationCheckResponse]
+@="visCommIdeaWebV2.CommIdea.PayerAuth.AuthenticationCheckResponse"
+
+[HKEY_CLASSES_ROOT\visCommIdeaWebV2.CommIdea.PayerAuth.AuthenticationCheckResponse\CLSID]
+@="{C8BFD907-3450-3D3A-9032-A246A18E87FE}"
+
+[HKEY_CLASSES_ROOT\CLSID\{C8BFD907-3450-3D3A-9032-A246A18E87FE}]
+@="visCommIdeaWebV2.CommIdea.PayerAuth.AuthenticationCheckResponse"
+
+[HKEY_CLASSES_ROOT\CLSID\{C8BFD907-3450-3D3A-9032-A246A18E87FE}\InprocServer32]
+@="mscoree.dll"
+"ThreadingModel"="Both"
+"Class"="visCommIdeaWebV2.CommIdea.PayerAuth.AuthenticationCheckResponse"
+"Assembly"="visCommIdeaWebV2, Version=4.5.6.0, Culture=neutral, PublicKeyToken=null"
+"RuntimeVersion"="v4.0.30319"
+"CodeBase"="file:///G:/Vista/PaymentsModule/visCommIdeaWebV2.dll"
+
+[HKEY_CLASSES_ROOT\CLSID\{C8BFD907-3450-3D3A-9032-A246A18E87FE}\InprocServer32\4.5.6.0]
+"Class"="visCommIdeaWebV2.CommIdea.PayerAuth.AuthenticationCheckResponse"
+"Assembly"="visCommIdeaWebV2, Version=4.5.6.0, Culture=neutral, PublicKeyToken=null"
+"RuntimeVersion"="v4.0.30319"
+"CodeBase"="file:///G:/Vista/PaymentsModule/visCommIdeaWebV2.dll"
+
+[HKEY_CLASSES_ROOT\CLSID\{C8BFD907-3450-3D3A-9032-A246A18E87FE}\ProgId]
+@="visCommIdeaWebV2.CommIdea.PayerAuth.AuthenticationCheckResponse"
+
+[HKEY_CLASSES_ROOT\CLSID\{C8BFD907-3450-3D3A-9032-A246A18E87FE}\Implemented Categories\{62C8FE65-4EBB-45E7-B440-6E39B2CDBF29}]
+
+[HKEY_CLASSES_ROOT\visCommIdeaWebV2.CommIdea.PayerAuth.AuthenticationCheckRequest]
+@="visCommIdeaWebV2.CommIdea.PayerAuth.AuthenticationCheckRequest"
+
+[HKEY_CLASSES_ROOT\visCommIdeaWebV2.CommIdea.PayerAuth.AuthenticationCheckRequest\CLSID]
+@="{9AF81D0F-B300-3A0B-9D7C-4B97C277471C}"
+
+[HKEY_CLASSES_ROOT\CLSID\{9AF81D0F-B300-3A0B-9D7C-4B97C277471C}]
+@="visCommIdeaWebV2.CommIdea.PayerAuth.AuthenticationCheckRequest"
+
+[HKEY_CLASSES_ROOT\CLSID\{9AF81D0F-B300-3A0B-9D7C-4B97C277471C}\InprocServer32]
+@="mscoree.dll"
+"ThreadingModel"="Both"
+"Class"="visCommIdeaWebV2.CommIdea.PayerAuth.AuthenticationCheckRequest"
+"Assembly"="visCommIdeaWebV2, Version=4.5.6.0, Culture=neutral, PublicKeyToken=null"
+"RuntimeVersion"="v4.0.30319"
+"CodeBase"="file:///G:/Vista/PaymentsModule/visCommIdeaWebV2.dll"
+
+[HKEY_CLASSES_ROOT\CLSID\{9AF81D0F-B300-3A0B-9D7C-4B97C277471C}\InprocServer32\4.5.6.0]
+"Class"="visCommIdeaWebV2.CommIdea.PayerAuth.AuthenticationCheckRequest"
+"Assembly"="visCommIdeaWebV2, Version=4.5.6.0, Culture=neutral, PublicKeyToken=null"
+"RuntimeVersion"="v4.0.30319"
+"CodeBase"="file:///G:/Vista/PaymentsModule/visCommIdeaWebV2.dll"
+
+[HKEY_CLASSES_ROOT\CLSID\{9AF81D0F-B300-3A0B-9D7C-4B97C277471C}\ProgId]
+@="visCommIdeaWebV2.CommIdea.PayerAuth.AuthenticationCheckRequest"
+
+[HKEY_CLASSES_ROOT\CLSID\{9AF81D0F-B300-3A0B-9D7C-4B97C277471C}\Implemented Categories\{62C8FE65-4EBB-45E7-B440-6E39B2CDBF29}]
+
+[HKEY_CLASSES_ROOT\visCommIdeaWebV2.CommIdea.PayerAuth.EnrollmentCheckResponse]
+@="visCommIdeaWebV2.CommIdea.PayerAuth.EnrollmentCheckResponse"
+
+[HKEY_CLASSES_ROOT\visCommIdeaWebV2.CommIdea.PayerAuth.EnrollmentCheckResponse\CLSID]
+@="{A1011E91-F97D-30A5-AF66-AD8A9A0CC54A}"
+
+[HKEY_CLASSES_ROOT\CLSID\{A1011E91-F97D-30A5-AF66-AD8A9A0CC54A}]
+@="visCommIdeaWebV2.CommIdea.PayerAuth.EnrollmentCheckResponse"
+
+[HKEY_CLASSES_ROOT\CLSID\{A1011E91-F97D-30A5-AF66-AD8A9A0CC54A}\InprocServer32]
+@="mscoree.dll"
+"ThreadingModel"="Both"
+"Class"="visCommIdeaWebV2.CommIdea.PayerAuth.EnrollmentCheckResponse"
+"Assembly"="visCommIdeaWebV2, Version=4.5.6.0, Culture=neutral, PublicKeyToken=null"
+"RuntimeVersion"="v4.0.30319"
+"CodeBase"="file:///G:/Vista/PaymentsModule/visCommIdeaWebV2.dll"
+
+[HKEY_CLASSES_ROOT\CLSID\{A1011E91-F97D-30A5-AF66-AD8A9A0CC54A}\InprocServer32\4.5.6.0]
+"Class"="visCommIdeaWebV2.CommIdea.PayerAuth.EnrollmentCheckResponse"
+"Assembly"="visCommIdeaWebV2, Version=4.5.6.0, Culture=neutral, PublicKeyToken=null"
+"RuntimeVersion"="v4.0.30319"
+"CodeBase"="file:///G:/Vista/PaymentsModule/visCommIdeaWebV2.dll"
+
+[HKEY_CLASSES_ROOT\CLSID\{A1011E91-F97D-30A5-AF66-AD8A9A0CC54A}\ProgId]
+@="visCommIdeaWebV2.CommIdea.PayerAuth.EnrollmentCheckResponse"
+
+[HKEY_CLASSES_ROOT\CLSID\{A1011E91-F97D-30A5-AF66-AD8A9A0CC54A}\Implemented Categories\{62C8FE65-4EBB-45E7-B440-6E39B2CDBF29}]
+
+[HKEY_CLASSES_ROOT\visCommIdeaWebV2.LocalConstants+RequestTypes]
+@="visCommIdeaWebV2.LocalConstants+RequestTypes"
+
+[HKEY_CLASSES_ROOT\visCommIdeaWebV2.LocalConstants+RequestTypes\CLSID]
+@="{B54F5681-BD0D-3A0F-A1A6-C630A886B2BB}"
+
+[HKEY_CLASSES_ROOT\CLSID\{B54F5681-BD0D-3A0F-A1A6-C630A886B2BB}]
+@="visCommIdeaWebV2.LocalConstants+RequestTypes"
+
+[HKEY_CLASSES_ROOT\CLSID\{B54F5681-BD0D-3A0F-A1A6-C630A886B2BB}\InprocServer32]
+@="mscoree.dll"
+"ThreadingModel"="Both"
+"Class"="visCommIdeaWebV2.LocalConstants+RequestTypes"
+"Assembly"="visCommIdeaWebV2, Version=4.5.6.0, Culture=neutral, PublicKeyToken=null"
+"RuntimeVersion"="v4.0.30319"
+"CodeBase"="file:///G:/Vista/PaymentsModule/visCommIdeaWebV2.dll"
+
+[HKEY_CLASSES_ROOT\CLSID\{B54F5681-BD0D-3A0F-A1A6-C630A886B2BB}\InprocServer32\4.5.6.0]
+"Class"="visCommIdeaWebV2.LocalConstants+RequestTypes"
+"Assembly"="visCommIdeaWebV2, Version=4.5.6.0, Culture=neutral, PublicKeyToken=null"
+"RuntimeVersion"="v4.0.30319"
+"CodeBase"="file:///G:/Vista/PaymentsModule/visCommIdeaWebV2.dll"
+
+[HKEY_CLASSES_ROOT\CLSID\{B54F5681-BD0D-3A0F-A1A6-C630A886B2BB}\ProgId]
+@="visCommIdeaWebV2.LocalConstants+RequestTypes"
+
+[HKEY_CLASSES_ROOT\CLSID\{B54F5681-BD0D-3A0F-A1A6-C630A886B2BB}\Implemented Categories\{62C8FE65-4EBB-45E7-B440-6E39B2CDBF29}]
+
+[HKEY_CLASSES_ROOT\visCommIdeaWebV2.LocalConstants+LocalInputParms]
+@="visCommIdeaWebV2.LocalConstants+LocalInputParms"
+
+[HKEY_CLASSES_ROOT\visCommIdeaWebV2.LocalConstants+LocalInputParms\CLSID]
+@="{22E26C7B-89C9-31EE-868E-7335853FC654}"
+
+[HKEY_CLASSES_ROOT\CLSID\{22E26C7B-89C9-31EE-868E-7335853FC654}]
+@="visCommIdeaWebV2.LocalConstants+LocalInputParms"
+
+[HKEY_CLASSES_ROOT\CLSID\{22E26C7B-89C9-31EE-868E-7335853FC654}\InprocServer32]
+@="mscoree.dll"
+"ThreadingModel"="Both"
+"Class"="visCommIdeaWebV2.LocalConstants+LocalInputParms"
+"Assembly"="visCommIdeaWebV2, Version=4.5.6.0, Culture=neutral, PublicKeyToken=null"
+"RuntimeVersion"="v4.0.30319"
+"CodeBase"="file:///G:/Vista/PaymentsModule/visCommIdeaWebV2.dll"
+
+[HKEY_CLASSES_ROOT\CLSID\{22E26C7B-89C9-31EE-868E-7335853FC654}\InprocServer32\4.5.6.0]
+"Class"="visCommIdeaWebV2.LocalConstants+LocalInputParms"
+"Assembly"="visCommIdeaWebV2, Version=4.5.6.0, Culture=neutral, PublicKeyToken=null"
+"RuntimeVersion"="v4.0.30319"
+"CodeBase"="file:///G:/Vista/PaymentsModule/visCommIdeaWebV2.dll"
+
+[HKEY_CLASSES_ROOT\CLSID\{22E26C7B-89C9-31EE-868E-7335853FC654}\ProgId]
+@="visCommIdeaWebV2.LocalConstants+LocalInputParms"
+
+[HKEY_CLASSES_ROOT\CLSID\{22E26C7B-89C9-31EE-868E-7335853FC654}\Implemented Categories\{62C8FE65-4EBB-45E7-B440-6E39B2CDBF29}]
+
+[HKEY_CLASSES_ROOT\visCommIdeaWebV2.LocalConstants+LocalOutputParms]
+@="visCommIdeaWebV2.LocalConstants+LocalOutputParms"
+
+[HKEY_CLASSES_ROOT\visCommIdeaWebV2.LocalConstants+LocalOutputParms\CLSID]
+@="{2EA2C6B3-9299-3F31-91AF-C181046A67E2}"
+
+[HKEY_CLASSES_ROOT\CLSID\{2EA2C6B3-9299-3F31-91AF-C181046A67E2}]
+@="visCommIdeaWebV2.LocalConstants+LocalOutputParms"
+
+[HKEY_CLASSES_ROOT\CLSID\{2EA2C6B3-9299-3F31-91AF-C181046A67E2}\InprocServer32]
+@="mscoree.dll"
+"ThreadingModel"="Both"
+"Class"="visCommIdeaWebV2.LocalConstants+LocalOutputParms"
+"Assembly"="visCommIdeaWebV2, Version=4.5.6.0, Culture=neutral, PublicKeyToken=null"
+"RuntimeVersion"="v4.0.30319"
+"CodeBase"="file:///G:/Vista/PaymentsModule/visCommIdeaWebV2.dll"
+
+[HKEY_CLASSES_ROOT\CLSID\{2EA2C6B3-9299-3F31-91AF-C181046A67E2}\InprocServer32\4.5.6.0]
+"Class"="visCommIdeaWebV2.LocalConstants+LocalOutputParms"
+"Assembly"="visCommIdeaWebV2, Version=4.5.6.0, Culture=neutral, PublicKeyToken=null"
+"RuntimeVersion"="v4.0.30319"
+"CodeBase"="file:///G:/Vista/PaymentsModule/visCommIdeaWebV2.dll"
+
+[HKEY_CLASSES_ROOT\CLSID\{2EA2C6B3-9299-3F31-91AF-C181046A67E2}\ProgId]
+@="visCommIdeaWebV2.LocalConstants+LocalOutputParms"
+
+[HKEY_CLASSES_ROOT\CLSID\{2EA2C6B3-9299-3F31-91AF-C181046A67E2}\Implemented Categories\{62C8FE65-4EBB-45E7-B440-6E39B2CDBF29}]
+
+[HKEY_CLASSES_ROOT\visCommIdeaWebV2.LocalConstants+LocalErrorCodes]
+@="visCommIdeaWebV2.LocalConstants+LocalErrorCodes"
+
+[HKEY_CLASSES_ROOT\visCommIdeaWebV2.LocalConstants+LocalErrorCodes\CLSID]
+@="{2BE7144A-2EE3-3DF9-B70B-90AA20F3DCA6}"
+
+[HKEY_CLASSES_ROOT\CLSID\{2BE7144A-2EE3-3DF9-B70B-90AA20F3DCA6}]
+@="visCommIdeaWebV2.LocalConstants+LocalErrorCodes"
+
+[HKEY_CLASSES_ROOT\CLSID\{2BE7144A-2EE3-3DF9-B70B-90AA20F3DCA6}\InprocServer32]
+@="mscoree.dll"
+"ThreadingModel"="Both"
+"Class"="visCommIdeaWebV2.LocalConstants+LocalErrorCodes"
+"Assembly"="visCommIdeaWebV2, Version=4.5.6.0, Culture=neutral, PublicKeyToken=null"
+"RuntimeVersion"="v4.0.30319"
+"CodeBase"="file:///G:/Vista/PaymentsModule/visCommIdeaWebV2.dll"
+
+[HKEY_CLASSES_ROOT\CLSID\{2BE7144A-2EE3-3DF9-B70B-90AA20F3DCA6}\InprocServer32\4.5.6.0]
+"Class"="visCommIdeaWebV2.LocalConstants+LocalErrorCodes"
+"Assembly"="visCommIdeaWebV2, Version=4.5.6.0, Culture=neutral, PublicKeyToken=null"
+"RuntimeVersion"="v4.0.30319"
+"CodeBase"="file:///G:/Vista/PaymentsModule/visCommIdeaWebV2.dll"
+
+[HKEY_CLASSES_ROOT\CLSID\{2BE7144A-2EE3-3DF9-B70B-90AA20F3DCA6}\ProgId]
+@="visCommIdeaWebV2.LocalConstants+LocalErrorCodes"
+
+[HKEY_CLASSES_ROOT\CLSID\{2BE7144A-2EE3-3DF9-B70B-90AA20F3DCA6}\Implemented Categories\{62C8FE65-4EBB-45E7-B440-6E39B2CDBF29}]
+
+[HKEY_CLASSES_ROOT\visCommIdeaWebV2.LocalConstants+CommIdeaWebErrorCodes]
+@="visCommIdeaWebV2.LocalConstants+CommIdeaWebErrorCodes"
+
+[HKEY_CLASSES_ROOT\visCommIdeaWebV2.LocalConstants+CommIdeaWebErrorCodes\CLSID]
+@="{40D054BE-25D9-3DF5-980B-5B81D9398AD0}"
+
+[HKEY_CLASSES_ROOT\CLSID\{40D054BE-25D9-3DF5-980B-5B81D9398AD0}]
+@="visCommIdeaWebV2.LocalConstants+CommIdeaWebErrorCodes"
+
+[HKEY_CLASSES_ROOT\CLSID\{40D054BE-25D9-3DF5-980B-5B81D9398AD0}\InprocServer32]
+@="mscoree.dll"
+"ThreadingModel"="Both"
+"Class"="visCommIdeaWebV2.LocalConstants+CommIdeaWebErrorCodes"
+"Assembly"="visCommIdeaWebV2, Version=4.5.6.0, Culture=neutral, PublicKeyToken=null"
+"RuntimeVersion"="v4.0.30319"
+"CodeBase"="file:///G:/Vista/PaymentsModule/visCommIdeaWebV2.dll"
+
+[HKEY_CLASSES_ROOT\CLSID\{40D054BE-25D9-3DF5-980B-5B81D9398AD0}\InprocServer32\4.5.6.0]
+"Class"="visCommIdeaWebV2.LocalConstants+CommIdeaWebErrorCodes"
+"Assembly"="visCommIdeaWebV2, Version=4.5.6.0, Culture=neutral, PublicKeyToken=null"
+"RuntimeVersion"="v4.0.30319"
+"CodeBase"="file:///G:/Vista/PaymentsModule/visCommIdeaWebV2.dll"
+
+[HKEY_CLASSES_ROOT\CLSID\{40D054BE-25D9-3DF5-980B-5B81D9398AD0}\ProgId]
+@="visCommIdeaWebV2.LocalConstants+CommIdeaWebErrorCodes"
+
+[HKEY_CLASSES_ROOT\CLSID\{40D054BE-25D9-3DF5-980B-5B81D9398AD0}\Implemented Categories\{62C8FE65-4EBB-45E7-B440-6E39B2CDBF29}]
+
+[HKEY_CLASSES_ROOT\visCommIdeaWebV2.LocalConstants+CommIdeaWebConstants]
+@="visCommIdeaWebV2.LocalConstants+CommIdeaWebConstants"
+
+[HKEY_CLASSES_ROOT\visCommIdeaWebV2.LocalConstants+CommIdeaWebConstants\CLSID]
+@="{D10A980A-E17B-3E1B-97D8-30B7B636F0E3}"
+
+[HKEY_CLASSES_ROOT\CLSID\{D10A980A-E17B-3E1B-97D8-30B7B636F0E3}]
+@="visCommIdeaWebV2.LocalConstants+CommIdeaWebConstants"
+
+[HKEY_CLASSES_ROOT\CLSID\{D10A980A-E17B-3E1B-97D8-30B7B636F0E3}\InprocServer32]
+@="mscoree.dll"
+"ThreadingModel"="Both"
+"Class"="visCommIdeaWebV2.LocalConstants+CommIdeaWebConstants"
+"Assembly"="visCommIdeaWebV2, Version=4.5.6.0, Culture=neutral, PublicKeyToken=null"
+"RuntimeVersion"="v4.0.30319"
+"CodeBase"="file:///G:/Vista/PaymentsModule/visCommIdeaWebV2.dll"
+
+[HKEY_CLASSES_ROOT\CLSID\{D10A980A-E17B-3E1B-97D8-30B7B636F0E3}\InprocServer32\4.5.6.0]
+"Class"="visCommIdeaWebV2.LocalConstants+CommIdeaWebConstants"
+"Assembly"="visCommIdeaWebV2, Version=4.5.6.0, Culture=neutral, PublicKeyToken=null"
+"RuntimeVersion"="v4.0.30319"
+"CodeBase"="file:///G:/Vista/PaymentsModule/visCommIdeaWebV2.dll"
+
+[HKEY_CLASSES_ROOT\CLSID\{D10A980A-E17B-3E1B-97D8-30B7B636F0E3}\ProgId]
+@="visCommIdeaWebV2.LocalConstants+CommIdeaWebConstants"
+
+[HKEY_CLASSES_ROOT\CLSID\{D10A980A-E17B-3E1B-97D8-30B7B636F0E3}\Implemented Categories\{62C8FE65-4EBB-45E7-B440-6E39B2CDBF29}]
+
+[HKEY_CLASSES_ROOT\visCommIdeaWebV2.LocalConstants+HistoryParms]
+@="visCommIdeaWebV2.LocalConstants+HistoryParms"
+
+[HKEY_CLASSES_ROOT\visCommIdeaWebV2.LocalConstants+HistoryParms\CLSID]
+@="{C0900A09-A48B-3752-8554-D16C19C46FC1}"
+
+[HKEY_CLASSES_ROOT\CLSID\{C0900A09-A48B-3752-8554-D16C19C46FC1}]
+@="visCommIdeaWebV2.LocalConstants+HistoryParms"
+
+[HKEY_CLASSES_ROOT\CLSID\{C0900A09-A48B-3752-8554-D16C19C46FC1}\InprocServer32]
+@="mscoree.dll"
+"ThreadingModel"="Both"
+"Class"="visCommIdeaWebV2.LocalConstants+HistoryParms"
+"Assembly"="visCommIdeaWebV2, Version=4.5.6.0, Culture=neutral, PublicKeyToken=null"
+"RuntimeVersion"="v4.0.30319"
+"CodeBase"="file:///G:/Vista/PaymentsModule/visCommIdeaWebV2.dll"
+
+[HKEY_CLASSES_ROOT\CLSID\{C0900A09-A48B-3752-8554-D16C19C46FC1}\InprocServer32\4.5.6.0]
+"Class"="visCommIdeaWebV2.LocalConstants+HistoryParms"
+"Assembly"="visCommIdeaWebV2, Version=4.5.6.0, Culture=neutral, PublicKeyToken=null"
+"RuntimeVersion"="v4.0.30319"
+"CodeBase"="file:///G:/Vista/PaymentsModule/visCommIdeaWebV2.dll"
+
+[HKEY_CLASSES_ROOT\CLSID\{C0900A09-A48B-3752-8554-D16C19C46FC1}\ProgId]
+@="visCommIdeaWebV2.LocalConstants+HistoryParms"
+
+[HKEY_CLASSES_ROOT\CLSID\{C0900A09-A48B-3752-8554-D16C19C46FC1}\Implemented Categories\{62C8FE65-4EBB-45E7-B440-6E39B2CDBF29}]

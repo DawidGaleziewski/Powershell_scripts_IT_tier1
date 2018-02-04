@@ -1,0 +1,1 @@
+Get-EventLog -ComputerName 10.130.1.12,10.130.1.11 -LogName Security -Newest 10 -After "9.4.2017 10:00" -InstanceId 4740   | Format-Table -Wrap 

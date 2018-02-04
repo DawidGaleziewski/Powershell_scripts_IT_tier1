@@ -1,0 +1,35 @@
+$abr= Get-Content C:\copydll\abr.txt
+
+
+foreach ($a in $abr)
+{
+
+$dc1= "uc" + "$a" + "p-dc1"
+$dc1
+$scope= Get-DhcpServerv4Scope –ComputerName $dc1 | select -Property scopeid
+write-host  (" for scope $scope" )
+
+
+foreach ($s in $scope)
+{
+
+netsh dhcp server \\$dc1 scope $s.scopeid show clients 1
+
+}
+
+
+$dc2= "uc" + "$a" + "p-dc2"
+$dc2
+$scope= Get-DhcpServerv4Scope –ComputerName $dc2 | select -Property scopeid
+write-host  (" for scope $scope" )
+
+
+foreach ($s in $scope)
+{
+
+netsh dhcp server \\$dc2 scope $s.scopeid show clients 1
+
+}
+
+
+}

@@ -1,0 +1,18 @@
+if ($true)
+{
+    $user = "itservicedesk@cineworld.co.uk"
+    $pass = ConvertTo-SecureString -String "Cineworld01" -AsPlainText -Force
+    $cred = New-Object System.Management.Automation.PSCredential $user, $pass
+    
+    $mailParam = @{
+        To = "Dawid.Galeziewski@Cineworld.co.uk"
+        From = "itservicedesk@cineworld.co.uk"
+        Subject = "File report"
+        Body = "test"
+        SmtpServer = "smtp.office365.com"
+        Port = 587
+        Credential = $cred
+    }
+
+    Send-MailMessage @mailParam -UseSsl -Verbose
+}

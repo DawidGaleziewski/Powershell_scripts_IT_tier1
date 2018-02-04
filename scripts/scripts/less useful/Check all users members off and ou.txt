@@ -1,0 +1,76 @@
+$computers=Get-ADComputer -server "production-hosted1.domain.cineworld.local"  -filter * -Properties memberof
+$users=Get-ADUser -server "production-hosted1.domain.cineworld.local"  -filter * -Properties memberof
+
+$obj= New-Object psobject 
+
+foreach ($computer in $computers)
+
+{
+
+$name=$computer.name
+$enabled=$computer.enabled
+
+$memberof= $computer.memberof.split(',')
+$OU=$memberof | Select-String -Pattern OU= 
+$CN=$memberof | Select-String -Pattern CN= 
+$DC=$memberof | Select-String -Pattern DC= 
+
+$OU= $OU -replace 'OU=' 
+$OU= $OU -join ', '
+
+
+$CN= $CN -replace 'CN=' 
+$CN= $CN -join ', '
+
+$DC= $DC -replace 'DC=' 
+$DC= $DC -join ', '
+
+
+$obj= New-Object psobject
+Add-Member -InputObject $obj -MemberType NoteProperty -Name Name -Value "$name"
+Add-Member -InputObject $obj -MemberType NoteProperty -Name Enabled -Value "$enabled"
+Add-Member -InputObject $obj -MemberType NoteProperty -Name OU -Value "$OU"
+Add-Member -InputObject $obj -MemberType NoteProperty -Name CNMembersOf -Value "$CN"
+Add-Member -InputObject $obj -MemberType NoteProperty -Name DC -Value "$DC"
+[array]$myArrayComputers+= $obj
+
+}
+
+
+foreach ($user in $users)
+
+{
+
+$name=$user.name
+$enabled=$user.enabled
+
+$memberof= $computer.memberof.split(',')
+$OU=$memberof | Select-String -Pattern OU= 
+$CN=$memberof | Select-String -Pattern CN= 
+$DC=$memberof | Select-String -Pattern DC= 
+
+$OU= $OU -replace 'OU=' 
+$OU= $OU -join ', '
+
+
+$CN= $CN -replace 'CN=' 
+$CN= $CN -join ', '
+
+$DC= $DC -replace 'DC=' 
+$DC= $DC -join ', '
+
+
+$obj= New-Object psobject
+Add-Member -InputObject $obj -MemberType NoteProperty -Name Name -Value "$name"
+Add-Member -InputObject $obj -MemberType NoteProperty -Name Enabled -Value "$enabled"
+Add-Member -InputObject $obj -MemberType NoteProperty -Name OU -Value "$OU"
+Add-Member -InputObject $obj -MemberType NoteProperty -Name CNMembersOf -Value "$CN"
+Add-Member -InputObject $obj -MemberType NoteProperty -Name DC -Value "$DC"
+[array]$myArrayUsers+= $obj
+
+}
+
+
+
+$myArrayComputers | Export-Csv C:\copydll\copy\Allcomputers.csv
+$myArrayUsers | Export-Csv C:\copydll\copy\Allusers.csv

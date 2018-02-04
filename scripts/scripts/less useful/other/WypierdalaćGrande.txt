@@ -1,0 +1,59 @@
+
+
+
+
+
+$OtherServers= Get-Content C:\copydll\OtherServers.txt
+
+
+
+
+foreach ($server in $OtherServers)
+{
+write-host ("Checking $server") -ForegroundColor Green
+
+$server
+$re = '(?<username>\w+)\s+?' +
+      '(\S*)\s+?' +
+      '(?<session>\d+)\s+' +
+      'Disc\s+' +
+      '(?:(?:(?<days>\d+)\+)?(?<hours>\d+):)?(?<minutes>\d+)\s+'
+   
+     
+$q= query user /server:$server | Where-Object { $_ -match $re } | ForEach-Object {
+  New-Object -Type PSCustomObject -Property @{
+    'Username'  = $matches['username']
+    'SessionID' = [int]$matches['session']
+    'IdleTime'  = if ($matches['days']) {
+                    New-TimeSpan -Days $matches['days'] -Hours $matches['hours'] -Minutes $matches['minutes']
+                  } elseif ($matches['hours']) {
+                    New-TimeSpan -Hours $matches['hours'] -Minutes $matches['minutes']
+                  } else {
+                    New-TimeSpan -Minutes $matches['minutes']
+                  }
+    
+  }
+} | Where-Object {
+  $_.IdleTime.TotalDays -gt 0.0215277777777778
+} | Select-Object Username, IdleTime, SessionId
+
+$q
+
+$id= $q.SessionId
+$id
+
+foreach ($usser in $id)
+{
+logoff $usser /server:$server
+Write-Host ("logged off $usser")
+}
+}
+
+
+
+
+
+
+
+
+

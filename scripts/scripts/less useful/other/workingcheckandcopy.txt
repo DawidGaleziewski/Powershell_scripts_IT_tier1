@@ -1,0 +1,39 @@
+#function copy-toviscin1 ($path, $dest)
+
+
+#{
+
+
+## $path are files to be copied from admin
+##this will take all files from this folder
+
+## $dest is the destination on viscin1 to be chacked and updated with files
+$path= "C:\copydll\copy"
+
+##this will take all files from this folder
+
+$dest= "VISTAINSTALL\copy"
+
+$viscin1= Get-Content C:\copydll\viscin1.txt
+
+foreach ($v in $viscin1)
+
+{
+$c=  gci $path 
+$d= gci "\\$v\$dest"
+$m= Compare-Object -ReferenceObject $c -DifferenceObject $d | where-Object -Property sideindicator -EQ "<=" 
+
+$m.InputObject | ForEach-Object {Copy-Item  "$path\$_"  -destination   "\\$v\$dest"}
+
+
+}### viscin1 loop
+
+
+
+
+#} #function
+
+ #copy-toviscin1 ("C:\copydll\copy","VISTAINSTALL\" )
+
+## $path are files to be copied from admin
+## $dest is the destination on viscin1 to be chacked and updated with files

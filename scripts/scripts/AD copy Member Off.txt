@@ -1,0 +1,4 @@
+
+Get-ADUser -Identity AXJ -Properties memberof |
+Select-Object -ExpandProperty memberof |
+Add-ADGroupMember -Members MBS -PassThru 

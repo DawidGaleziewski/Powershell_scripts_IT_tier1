@@ -1,0 +1,61 @@
+$dsp = Get-Content C:\TTG\scripts\dsp.txt
+[array]$myArrayComputers
+
+foreach ($d in $dsp)
+{
+    $path="\\$d\c$\ttg\data\qsc";
+    $testpath= test-path $path;
+    
+     if($testpath -eq $true)
+        {
+        $content= Get-Content -Path \\$d\c$\ttg\data\qsc\uc*;
+        $setting= $content.split(',');
+
+       $res= $setting | Select-String -Pattern "res";
+       $res1= $res -replace "res" -replace """:" -replace "res" -replace """";
+
+
+       $name= $d
+       $code= $setting | Select-String -Pattern "code";
+       $code3= $code -replace '"pos_code":' -replace '"code":' -replace $name -replace """";
+
+      
+       
+
+        $qsc= $setting | Select-String -Pattern "qsc";
+        $qsc1= $qsc -replace "qsc_files" -replace ":" -replace """";
+
+        $pathSum="\\$d\C$\TTG\mediaMATRIX";
+
+        $sum= gci  $pathSum | Measure-Object -Property length -sum | select -property sum;
+        $sum1 = [string]$sum -replace "@{sum=" -replace "}";
+
+
+
+
+        $obj= New-Object psobject;
+Add-Member -InputObject $obj -MemberType NoteProperty -Name name -Value "$d"
+Add-Member -InputObject $obj -MemberType NoteProperty -Name res -Value "$res1"
+Add-Member -InputObject $obj -MemberType NoteProperty -Name code -Value "$code3"
+Add-Member -InputObject $obj -MemberType NoteProperty -Name qsc -Value "$qsc1"
+Add-Member -InputObject $obj -MemberType NoteProperty -Name size_of_ttg_folder -Value "$sum1"
+
+        [array]$myArrayComputers+= $obj
+        }
+    else{write-host ("no path to $d") ;
+           $obj= New-Object psobject;
+Add-Member -InputObject $obj -MemberType NoteProperty -Name name -Value "$d"
+Add-Member -InputObject $obj -MemberType NoteProperty -Name res -Value "Cannot connect to this dsp"
+
+
+    [array]$myArrayComputers+= $obj
+    }
+}
+
+$date= get-date;
+$d= "ucabep-dsp01"
+$d1= $d -replace "-dsp01"
+$date.day + $date.Month;
+$nameFile= $d1 + "-mrx1" + $date.day + $date.Month +".csv"
+$myArrayComputers| Export-Csv C:\$nameFile
+Read-Host -Prompt "Press Enter to exit"

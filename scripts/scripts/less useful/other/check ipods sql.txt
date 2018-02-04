@@ -1,0 +1,4 @@
+SELECT TOP 1000 [ClientId]
+      ,[WorkstationId]
+  FROM [VISTA].[dbo].[tblKiosk]
+  where [WorkstationId]like 'uc%ush%'

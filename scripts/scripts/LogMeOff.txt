@@ -1,0 +1,13 @@
+
+$userName = 'dga'
+$server= Get-Content C:\copydll\allservers.txt
+
+foreach ($s in $server)
+{
+$sessionId = ((quser /server:$s | Where-Object { $_ -match $userName }) -split ' +')[2]
+$sessionId
+
+	
+logoff $sessionId /server:$s
+write-host ("Done for $s")
+}

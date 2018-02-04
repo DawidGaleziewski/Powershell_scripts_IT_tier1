@@ -1,0 +1,48 @@
+#function copy-toviscin1 ($path, $dest)
+
+
+#{
+
+
+## $path are files to be copied from admin
+##this will take all files from this folder
+
+## $dest is the destination on viscin1 to be chacked and updated with files
+$path= "C:\copydll\Drivers\copy"
+
+##this will take all files from this folder
+
+$dest= "VISTAINSTALL\Drivers\ped"
+
+$viscin1= Get-Content C:\copydll\vx820.txt
+
+foreach ($v in $viscin1)
+
+{
+Write-Host ("Starting for $v")
+$c=  gci $path 
+$tp= Test-Path "\\$v\$dest"
+
+##condition
+if($tp -eq $false)
+{
+$c=  gci $path
+Copy-Item  "$path"  -destination   "\\$v\VISTAINSTALL" -Recurse -force
+}
+elseif ($tp -eq $true)
+{
+$d= Get-ChildItem "\\$v\$dest"
+$m= Compare-Object -ReferenceObject $c -DifferenceObject $d 
+if ($m.sideindicator -EQ "<="  )
+{
+$m.InputObject | ForEach-Object {Copy-Item  "$path\$_"  -destination   "\\$v\$dest" -Recurse}
+}
+
+###still need condition when $d = null or the folder is non existant
+
+
+}
+
+}### viscin1 loop
+
+

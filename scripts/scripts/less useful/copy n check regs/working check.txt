@@ -1,0 +1,77 @@
+
+
+$viscin1= Get-Content "C:\copydll\viscin1.txt"
+
+$domainuser = 'domain\dga'
+$domainpassword = 'Kochamplacki1' | ConvertTo-SecureString -AsPlainText -Force
+$domaincredentials = New-Object System.Management.Automation.PSCredential ($domainuser, $domainpassword)
+
+
+
+
+######compare regedit
+
+#getting model
+
+
+$model=
+Invoke-Command -ComputerName ucabep-viscin1 -Credential $domaincredentials -ScriptBlock {
+New-PSDrive -Name HKCR -PSProvider Registry -Root HKEY_CLASSES_ROOT;
+
+ 
+gci HKCR:\viscommideawebv2* -Recurse 
+
+}
+
+ 
+
+foreach ($v in $viscin1)
+
+{
+Write-Host ("##NOW CHECKING $V ##") -BackgroundColor black;
+$test=
+Invoke-Command -ComputerName $v -Credential $domaincredentials -ScriptBlock {
+New-PSDrive -Name HKCR -PSProvider Registry -Root HKEY_CLASSES_ROOT;
+gci HKCR:\viscommideawebv2* -Recurse | select -Property name}
+
+
+
+####lab part
+## non changable
+$compare= Compare-Object -ReferenceObject $Model -DifferenceObject $test
+if ($compare.sideindicator -contains "=>" -or $compare.sideindicator -contains "<=" )
+
+{Write-Host ("Wrong Regedit on $v") -BackgroundColor red}
+
+else
+{Write-Host ("All fine here") -BackgroundColor green;
+$AlertReg += " $v"
+}
+Write-Host ("##DONE CHECKING $V ##") -BackgroundColor black;
+}
+ 
+
+
+###############################
+
+
+
+
+#############################end
+
+
+#selection by name
+
+
+
+
+ 
+
+
+
+Write-Host ("Brak w regedit  $AlertReg") -BackgroundColor RED;
+Write-Host ("Brak pliku  $alerfile") -BackgroundColor RED;
+
+
+Clear-Variable AlertReg
+Clear-Variable alerfile

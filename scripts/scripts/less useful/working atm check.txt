@@ -1,0 +1,179 @@
+
+$workstation= $atm
+$ping= ping $workstation
+if ($ping[2] -like "*Reply from*") {$online += $workstation ;$workstation; 'replied to ping'}
+elseif ($ping[2] -like "*Request timed out*") {$offline += $workstation;$workstation; 'it is offline'}
+elseif ($ping -like "*ping request could not find host*") {$Nohost += $workstation;$workstation;'Could not find host'}
+
+
+
+
+$Conline= 0
+$Coffline= 0
+$CNohost= 0
+$Ccorrectxml= 0
+$Cwrongxml= 0
+
+
+
+
+
+$allcinemas= 'ELY','ABE', 'AUS', 'ALD', 'ASH', 'AUL', 'BAS', 'BED','BEX','BIR','NEC','BTW','BOL','BFD','BRA','BRI','BST','BRM','BRO','BOT','BSE','CAR','CAS','CHL','CHE','CTF','CCH','CRA','DPK','DID','DSB','DUB','DUN','EAS','EDI','ENF','FAL','FEL','FUL','GLA','GRS','GSC','GSB','GLQ','GRE','HAR','HAV','HAY','HEM','HWY','HCK','HUL','HUN','ILF','IPS','IOW','JER','LSQ','LEI','LLA','LOU','LUT','MID','MIL','NEW','NFW','NOR','NOT','POL','ROC','RUG','RUN','SHE','SHR','SOL','SOU','STH','SNT','STE','STO','STK','SWI','SRC','TEL','WAK','WAN','WEM','WIQ','WEY','WHT','WIT','WOL','WOG','YTE','YEO'
+$i=0
+
+
+Write-Host (
+"
+ ######################################
+ ####!!!!CHECKING ALL ATM'S   !!!!#####
+ ######################################
+ ######################################
+ #@@@@@@@@@@@@ CHECKING @@@@@@@@@@@@@@# 
+ #--------NETWORK STATUS--------------#
+ #--------XML'S VERSION---------------#
+ ######################################"
+
+
+ 
+ )-background black -ForegroundColor WHITE;
+
+
+foreach ($e in 1..100)
+
+
+{
+
+$cinema= $allcinemas[$i];
+$number=1;
+
+
+foreach ($c in 1..9) 
+
+
+ 
+
+ 
+ {
+
+ 
+$atm= 'uc'+ $cinema + 'atm0'+ $number; 
+
+Write-Host(
+"###CHECKING $ATM###
+\\\\\\\\\\\\\\\\\\\\\
+||||||||||||||||||||||"
+
+)-BackgroundColor Black;
+
+
+############# workstation needs to be changed to atm
+$workstation= $atm
+$ping= ping $workstation
+
+
+if ($ping[2] -like "*Reply from*" -or $ping[4] -like "*Reply from*")
+ {
+ $online += " $workstation" ;$workstation; 'replied to ping'; $Conline++;
+ 
+ 
+
+
+  $xmlpath =  "\\$atm\c$\VISTA\VistaKiosk\Config\"
+  $loyalpath= $xmlpath + "VSSCLIENTLOYALTY.xml"
+  $check=Get-Content $loyalpath
+
+
+ 
+
+if
+($check.Length -lt 5)
+{Write-host "this xml is correct" -ForegroundColor Green ;$correctxml += " $workstation";$Ccorrectxml++ ;}
+elseif
+($check.Length -gt 8)
+{
+write-host ("####WRONG XMLs####") -ForegroundColor Green -BackgroundColor red;
+$wrongxml += "  $workstation"; $Cwrongxml++;
+
+
+}
+
+ 
+ }
+elseif  ($ping[2] -like "*Request timed out*"-and $ping[4] -like "*Request timed out*") {$offline += " $workstation";$workstation; 'it is offline';$Coffline++}
+###
+elseif ($ping -like "*ping request could not find host*") {'Could not find host'; $Nohost += "  $workstation" ;$workstation;}
+
+
+
+
+
+
+ "$atm Checked";
+ Write-host(
+ "
+  |||||||||||||||||||
+ ////////////////////") -BackgroundColor Black;
+  $number++
+ 
+  }
+
+
+Write-Host (
+"######################################
+ ####!!!!summary from $cinema !!!!#####
+ ######################################" )-background black
+
+Write-Host ("Online: $online") -BackgroundColor Green
+Write-Host ("Offline: $offline") -BackgroundColor Red
+Write-Host ("No host: $Nohost") -BackgroundColor Gray
+Write-host ("Correct xml:  $correctxml")  -ForegroundColor Green
+Write-host ("Wrong xml:  $wrongxml") -BackgroundColor Red -ForegroundColor Green
+
+$allonline += "  $online"
+$alloffline += "  $offline"
+$Allwrongxml += "   $wrongxml"
+$allcorrectxml +="  $correctxml"
+
+
+Clear-Variable -name online
+Clear-Variable -name offline
+Clear-Variable -name Nohost
+Clear-Variable -name wrongxml
+Clear-Variable -name correctxml
+
+
+
+
+
+";"
+$i++;
+
+}
+
+
+Write-Host (
+"######################################
+ ####!!!!@@@@@@@SUMMARY@@@@@@ !!!!#####
+ ######################################" )-background DarkYellow
+
+Write-host ("Correct xml $allcorrectxml")  -ForegroundColor Green
+Write-host ("wrong xml  $allwrongxml") -BackgroundColor Red -ForegroundColor Green
+Write-Host ("online   $allonline") -BackgroundColor Green
+Write-Host ("offline  $alloffline") -BackgroundColor Red
+
+
+"----------------------------------"
+
+Write-host ("$Conline were online")
+Write-host ("$Coffline were ofline")
+Write-host ("$Ccorrectxml have correct xml")
+Write-host ("$Cwrongxml have wrong xml")
+
+
+Clear-Variable -name allonline
+Clear-Variable -name alloffline
+Clear-Variable -name allNohost
+Clear-Variable -name allwrongxml
+Clear-Variable -name allcorrectxml
+
+

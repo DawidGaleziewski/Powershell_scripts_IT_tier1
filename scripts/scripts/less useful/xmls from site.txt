@@ -1,0 +1,71 @@
+$numberOfZipFiles="9299","44459","50700";
+
+foreach($numberOfZipFile in $numberOfZipFiles )
+{
+Write-host("for code  $numberOfZipFile") -BackgroundColor red;
+
+$zipName= "cxh_r_" + $numberOfZipFile +"*";
+$delivered= gci E:\VISTA\ImportExport\Uploads;
+
+$deliverF= $delivered| Where-Object {$_.name -like $zipName};
+
+
+
+
+$procesed= gci E:\VISTA\ImportExport\Uploads\Processed;
+$processedF= $procesed| Where-Object {$_.name -like $zipName};
+
+
+$errors= gci E:\VISTA\ImportExport\Uploads\Errors;
+$errosF= $errors| Where-Object {$_.name -like $zipName};
+
+
+
+$titandata= gci \\10.130.111.230\xml_sync;
+$titandataF= $titandata| Where-Object {$_.name -like $zipName};
+
+foreach ($deliverF1 in $deliverF)
+{
+Copy-Item E:\VISTA\ImportExport\Uploads\$deliverF1 -Destination C:\Users\dga\Desktop\unpack;
+}
+
+
+
+
+Write-host("Delivered packet from site:  $deliverF") -BackgroundColor darkGreen;
+Write-host("Delivered packet from site:  $processedF") -BackgroundColor darkGreen;
+Write-host("Errors for packet: $errosF") -BackgroundColor darkGreen;
+Write-host("Transfered to titan packets: $titandataF") -BackgroundColor darkGreen;
+
+}
+
+
+
+
+function expand-ZIPFile($file, $destination)
+{
+$shell= New-Object -com shell.application;
+$zip=$shell.namespace($file);
+foreach($item in $zip.items())
+{
+$shell.namespace($destination).copyhere($item)
+}
+}
+
+
+
+$tounpackItems= gci C:\Users\dga\Desktop\unpack;
+
+
+
+foreach($tounpackItem in $tounpackItems)
+{
+
+$a= "C:\Users\dga\Desktop\unpack\" + $tounpackItem.name;
+expand-ZIPFile "$a" -destination "C:\Users\dga\Desktop\unpack";
+}
+
+
+
+
+
