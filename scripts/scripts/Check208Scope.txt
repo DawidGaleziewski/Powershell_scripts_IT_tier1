@@ -1,0 +1,42 @@
+$abr= Get-Content C:\copydll\copy\abr.txt
+[array]$myArrayComputers
+
+foreach ($a in $abr){
+
+$dc1= "uc" + "$a" + "p-dc1"
+
+ 
+
+$SlecttedScope= Get-DhcpServerv4Scope -ComputerName $dc1 | ? {$_.ScopeId -like "10.208*"}
+
+$Result= Get-DhcpServerv4Lease -ComputerName $dc1 -ScopeId $SlecttedScope.ScopeId
+
+    Foreach ($r in $result){
+    $obj= New-Object psobject;
+    $hostname=$r.hostname
+    Add-Member -InputObject $obj -MemberType NoteProperty -Name Hostname -Value "$hostname"
+    $clientID=$R.clientid
+    Add-Member -InputObject $obj -MemberType NoteProperty -Name MAC -Value "$clientID"
+    [array]$myArrayComputers+= $obj
+    }
+
+$dc2= "uc" + "$a" + "p-dc2"
+
+
+$SlecttedScope= Get-DhcpServerv4Scope -ComputerName $dc2 | ? {$_.ScopeId -like "10.208*"}
+
+$Result= Get-DhcpServerv4Lease -ComputerName $dc2 -ScopeId $SlecttedScope.ScopeId
+
+    Foreach ($r in $result){
+    $obj= New-Object psobject;
+    $hostname=$r.hostname
+    Add-Member -InputObject $obj -MemberType NoteProperty -Name Hostname -Value "$hostname"
+    $clientID=$R.clientid
+    Add-Member -InputObject $obj -MemberType NoteProperty -Name MAC -Value "$clientID"
+    [array]$myArrayComputers+= $obj
+    }
+
+}
+
+
+$myArrayComputers | Export-Csv C:\copydll\copy\MacAdressForTills2.csv
